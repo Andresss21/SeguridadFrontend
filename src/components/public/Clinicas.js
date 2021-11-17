@@ -13,7 +13,7 @@ function Clinicas() {
 
   useEffect(() => {
 
-    axios.get("http://127.0.0.1:8000/api/clinicas").then((response) => {
+    axios.get("http://192.168.1.11:3060/api/clinicas").then((response) => {
       setClinica(response.data);
     });
 

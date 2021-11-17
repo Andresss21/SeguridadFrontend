@@ -22,7 +22,7 @@ function MisClinicas() {
         }
         let id = sessionStorage.getItem("Id");
         axios.defaults.headers.common.Authorization = `Bearer  ${Token}`;
-        const data = axios.get("http://127.0.0.1:8000/api/showApiClinicas/" + id).then((response) => {
+        const data = axios.get("http://192.168.1.11:3060/api/showApiClinicas/" + id).then((response) => {
             let datos = [];
             response.data.map((doc) => {
                 datos.push({
@@ -50,7 +50,7 @@ function MisClinicas() {
 
     const sucursales = (element)=>{
         axios.defaults.headers.common.Authorization = `Bearer  ${Token}`;
-        const datos = axios.get("http://127.0.0.1:8000/api/showApiSucursales/" + element.id).then((response) => {
+        const datos = axios.get("http://192.168.1.11:3060/api/showApiSucursales/" + element.id).then((response) => {
                 let datos = [];
                 response.data.map((doc) => {
                     datos.push({

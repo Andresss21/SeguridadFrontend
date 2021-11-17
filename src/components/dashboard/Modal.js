@@ -29,7 +29,7 @@ function Modals(props) {
     const handleClose = props.onHide;
 
     useEffect(() => {
-        const data = axios.get("http://127.0.0.1:8000/api/categorias").then((response) => {
+        const data = axios.get("http://192.168.1.11:3060/api/categorias").then((response) => {
             let datos = [];
             response.data.map((doc) => {
                 datos.push({
@@ -45,7 +45,7 @@ function Modals(props) {
     }, []);
 
     const getDoctores = ((id) => {
-        const data = axios.get("http://127.0.0.1:8000/api/showApiDoctores/" + id).then((response) => {
+        const data = axios.get("http://192.168.1.11:3060/api/showApiDoctores/" + id).then((response) => {
             let datos = [];
             response.data.map((doc) => {
                 datos.push({

@@ -10,7 +10,7 @@ export function PlanesAuth(estado) {
 
     /*
     const config = async () => {
-        const { data } = await axios.get("http://127.0.0.1:8000/api/token");
+        const { data } = await axios.get("http://192.168.1.11:3060/api/token");
         return {
             headers: {
                 'X-CSRF-TOKEN': data
