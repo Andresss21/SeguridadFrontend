@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0b5645e5.chunk.css",
+    "main.js": "/static/js/main.5f9b1258.chunk.js",
+    "main.js.map": "/static/js/main.5f9b1258.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.718e726b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.718e726b.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.3a0e69f2.chunk.js": "/static/js/2.3a0e69f2.chunk.js",
+    "static/js/2.3a0e69f2.chunk.js.map": "/static/js/2.3a0e69f2.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.0b5645e5.chunk.css.map": "/static/css/main.0b5645e5.chunk.css.map",
+    "static/js/2.3a0e69f2.chunk.js.LICENSE.txt": "/static/js/2.3a0e69f2.chunk.js.LICENSE.txt",
+    "static/js/mapbox-gl-csp-worker.bcd70723.worker.js": "/static/js/mapbox-gl-csp-worker.bcd70723.worker.js",
+    "static/js/mapbox-gl-csp-worker.bcd70723.worker.js.map": "/static/js/mapbox-gl-csp-worker.bcd70723.worker.js.map",
+    "static/media/about1.87353b86.png": "/static/media/about1.87353b86.png",
+    "static/media/about2.a318f0c1.png": "/static/media/about2.a318f0c1.png",
+    "static/media/contact_form.f2152e9a.png": "/static/media/contact_form.f2152e9a.png",
+    "static/media/style.css": "/static/media/startup.decfc731.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.718e726b.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.3a0e69f2.chunk.js",
+    "static/css/main.0b5645e5.chunk.css",
+    "static/js/main.5f9b1258.chunk.js"
+  ]
+}
