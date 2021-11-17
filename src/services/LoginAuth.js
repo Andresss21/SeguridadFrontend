@@ -18,7 +18,7 @@ export function loginAuth(email, password) {
 
     
 
-    axios.post("http://192.168.1.11:3060/api/login", dataSubmit).then((response) => {
+    axios.post("http://192.168.1.11:8000/api/login", dataSubmit).then((response) => {
         //console.log('Funciona xd.');
         //console.log(response.data.token);
         sessionStorage.setItem('Id', response.data.user.id);

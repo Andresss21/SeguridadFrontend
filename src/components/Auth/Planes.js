@@ -15,7 +15,7 @@ function Planes() {
 		if (estado != 1) {
 			history.push("/Inicio");
 		}
-		axios.get("http://192.168.1.11:3060/api/planes").then((response) => {
+		axios.get("http://192.168.1.11:8000/api/planes").then((response) => {
 			setCPlanes(response.data);
 			setIsLoading(true);
 		});

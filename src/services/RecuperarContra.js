@@ -9,7 +9,7 @@ export function RecuperarContra(email) {
         email: email
     }
 
-    return axios.post("http://192.168.1.11:3060/api/recuperar", dataSubmit);
+    return axios.post("http://192.168.1.11:8000/api/recuperar", dataSubmit);
 
 
 }
@@ -21,7 +21,7 @@ export function CambiarContra(id, password) {
     }
     
     
-    axios.post("http://192.168.1.11:3060/api/cambiarContra", data).then((response) => {
+    axios.post("http://192.168.1.11:8000/api/cambiarContra", data).then((response) => {
         swal({ title: 'Contraseña actualizada correctament', icon: 'success', button: 'Aceptar', closeOnClickOutside: false, closeOnEsc: false }).then(value => { window.location.href = '#/Inicio'; window.location.reload(true); });
         return response.data;
  

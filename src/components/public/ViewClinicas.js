@@ -12,7 +12,7 @@ function ModalClinica(props) {
 
    const getLogo = (log)=>{
 
-        axios.get("http://192.168.1.11:3060/api/image/" + log).then((response) => {
+        axios.get("http://192.168.1.11:8000/api/image/" + log).then((response) => {
           setLogo(response.data);
         });
    }

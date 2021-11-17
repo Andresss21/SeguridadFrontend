@@ -10,7 +10,7 @@ export function PlanesAuth(estado) {
 
     /*
     const config = async () => {
-        const { data } = await axios.get("http://192.168.1.11:3060/api/token");
+        const { data } = await axios.get("http://192.168.1.11:8000/api/token");
         return {
             headers: {
                 'X-CSRF-TOKEN': data
@@ -27,7 +27,7 @@ export function PlanesAuth(estado) {
         }
 ;
 
-        axios.put(`http://192.168.1.11:3060/api/planes/${id}`, dataSubmit.estado).then((response) => {
+        axios.put(`http://192.168.1.11:8000/api/planes/${id}`, dataSubmit.estado).then((response) => {
             
             if (dataSubmit.estado.estado === 3) {
                 swal({ title: 'Disfruta de tus beneficios estandar', icon: 'success', button: 'Aceptar', closeOnClickOutside: false, closeOnEsc: false }).then(value => { window.location.href = '#/NuevaClinica'; window.location.reload(true); });

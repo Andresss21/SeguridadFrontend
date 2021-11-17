@@ -17,7 +17,7 @@ function Inicio() {
 
   useEffect(()=>{
     
-    axios.get("http://192.168.1.11:3060/api/planes").then((response)=>{
+    axios.get("http://192.168.1.11:8000/api/planes").then((response)=>{
        setPlanes(response.data);
        setIsLoading(true);   
     });
