@@ -13,7 +13,7 @@ export function storeSucursales(sucursal) {
 
         
         
-        axios.post('http://127.0.0.1:8000/api/storeSucursal/', sucursal).then((response) => {
+        axios.post('http://127.0.0.1:3306/api/storeSucursal/', sucursal).then((response) => {
             swal({ title: 'Sucursal creada correctamente', icon: 'success', button: 'Aceptar', closeOnClickOutside: false, closeOnEsc: false }).then(()=> window.location.reload(true));
         }).catch((error) => {
             swal({ title: 'Hubo un error en completar tu solicitud', icon: 'error', button: 'Aceptar', closeOnClickOutside: false, closeOnEsc: false });
@@ -30,7 +30,7 @@ export function editSucursal(sucursal){
     axios.defaults.headers.common.Authorization = `Bearer  ${bearer}`;
    
     
-    axios.put(`http://127.0.0.1:8000/api/editSucursal/${sucursal.id}`, sucursal).then((response) => {
+    axios.put(`http://127.0.0.1:3306/api/editSucursal/${sucursal.id}`, sucursal).then((response) => {
         swal({ title: 'Sucursal editada correctamente', icon: 'success', button: 'Aceptar', closeOnClickOutside: false, closeOnEsc: false }).then(()=> window.location.reload(true));
     }).catch((error) => {
         swal({ title: 'Hubo un error en completar tu solicitud', icon: 'error', button: 'Aceptar', closeOnClickOutside: false, closeOnEsc: false });

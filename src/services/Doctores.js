@@ -13,7 +13,7 @@ export function storeDoctores(doctor) {
         axios.defaults.headers.common['Content-Type'] = 'multipart/form-data';
         
     
-        axios.post('http://127.0.0.1:8000/api/storeDoctores/', doctor).then((response) => {
+        axios.post('http://127.0.0.1:3306/api/storeDoctores/', doctor).then((response) => {
             swal({ title: 'Doctor añadido correctamente', icon: 'success', button: 'Aceptar', closeOnClickOutside: false, closeOnEsc: false });
         }).catch((error) => {
             swal({ title: 'Hubo un error en completar tu solicitud', icon: 'error', button: 'Aceptar', closeOnClickOutside: false, closeOnEsc: false });

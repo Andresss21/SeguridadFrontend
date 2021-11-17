@@ -13,7 +13,7 @@ export function CreateClinica(clinica) {
         axios.defaults.headers.common['Content-Type'] = 'multipart/form-data';
         
     
-        axios.post('http://127.0.0.1:8000/api/storeClinicas/', clinica).then((response) => {
+        axios.post('http://127.0.0.1:3306/api/storeClinicas/', clinica).then((response) => {
             swal({ title: 'Clinica creada correctamente', icon: 'success', button: 'Aceptar', closeOnClickOutside: false, closeOnEsc: false }).then(value => { window.location.href = '#/MisClinicas'; window.location.reload(true); });
         }).catch((error) => {
             swal({ title: 'Hubo un error en completar tu solicitud', icon: 'error', button: 'Aceptar', closeOnClickOutside: false, closeOnEsc: false });
