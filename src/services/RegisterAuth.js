@@ -19,7 +19,7 @@ export function RegisterAuth(name, email, password) {
             };*/
     
      
-    axios.post("http://127.0.0.1:3306/api/registrar", dataSubmit).then((response) => {
+    axios.post("http://192.168.1.11:3060/api/registrar", dataSubmit).then((response) => {
         
         loginAuth(email,password);
         return response.data;
